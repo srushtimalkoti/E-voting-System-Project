@@ -1,0 +1,434 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{453FE150-4700-427A-8027-5264690804A7}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Evoting2</RootNamespace>
+    <AssemblyName>Evoting2</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Web, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AdminDash.aspx" />
+    <Content Include="AdminLogin.aspx" />
+    <Content Include="Candidate.aspx" />
+    <Content Include="castvote.aspx" />
+    <Content Include="CssTemplate\about.html" />
+    <Content Include="CssTemplate\appointment.html" />
+    <Content Include="CssTemplate\contact.html" />
+    <Content Include="CssTemplate\css\bootstrap.min.css" />
+    <Content Include="CssTemplate\css\style.css" />
+    <Content Include="CssTemplate\dental-clinic-website-template.jpg" />
+    <Content Include="CssTemplate\img\about.jpg" />
+    <Content Include="CssTemplate\img\after.jpg" />
+    <Content Include="CssTemplate\img\before.jpg" />
+    <Content Include="CssTemplate\img\carousel-1.jpg" />
+    <Content Include="CssTemplate\img\carousel-2.jpg" />
+    <Content Include="CssTemplate\img\price-1.jpg" />
+    <Content Include="CssTemplate\img\price-2.jpg" />
+    <Content Include="CssTemplate\img\price-3.jpg" />
+    <Content Include="CssTemplate\img\service-1.jpg" />
+    <Content Include="CssTemplate\img\service-2.jpg" />
+    <Content Include="CssTemplate\img\service-3.jpg" />
+    <Content Include="CssTemplate\img\service-4.jpg" />
+    <Content Include="CssTemplate\img\team-1.jpg" />
+    <Content Include="CssTemplate\img\team-2.jpg" />
+    <Content Include="CssTemplate\img\team-3.jpg" />
+    <Content Include="CssTemplate\img\team-4.jpg" />
+    <Content Include="CssTemplate\img\team-5.jpg" />
+    <Content Include="CssTemplate\img\testimonial-1.jpg" />
+    <Content Include="CssTemplate\img\testimonial-2.jpg" />
+    <Content Include="CssTemplate\index.html" />
+    <Content Include="CssTemplate\js\main.js" />
+    <Content Include="CssTemplate\lib\animate\animate.css" />
+    <Content Include="CssTemplate\lib\animate\animate.min.css" />
+    <Content Include="CssTemplate\lib\easing\easing.js" />
+    <Content Include="CssTemplate\lib\easing\easing.min.js" />
+    <Content Include="CssTemplate\lib\owlcarousel\assets\ajax-loader.gif" />
+    <Content Include="CssTemplate\lib\owlcarousel\assets\owl.carousel.css" />
+    <Content Include="CssTemplate\lib\owlcarousel\assets\owl.carousel.min.css" />
+    <Content Include="CssTemplate\lib\owlcarousel\assets\owl.theme.default.css" />
+    <Content Include="CssTemplate\lib\owlcarousel\assets\owl.theme.default.min.css" />
+    <Content Include="CssTemplate\lib\owlcarousel\assets\owl.theme.green.css" />
+    <Content Include="CssTemplate\lib\owlcarousel\assets\owl.theme.green.min.css" />
+    <Content Include="CssTemplate\lib\owlcarousel\assets\owl.video.play.png" />
+    <Content Include="CssTemplate\lib\owlcarousel\owl.carousel.js" />
+    <Content Include="CssTemplate\lib\owlcarousel\owl.carousel.min.js" />
+    <Content Include="CssTemplate\lib\tempusdominus\css\tempusdominus-bootstrap-4.css" />
+    <Content Include="CssTemplate\lib\tempusdominus\css\tempusdominus-bootstrap-4.min.css" />
+    <Content Include="CssTemplate\lib\tempusdominus\js\moment-timezone.min.js" />
+    <Content Include="CssTemplate\lib\tempusdominus\js\moment.min.js" />
+    <Content Include="CssTemplate\lib\tempusdominus\js\tempusdominus-bootstrap-4.js" />
+    <Content Include="CssTemplate\lib\tempusdominus\js\tempusdominus-bootstrap-4.min.js" />
+    <Content Include="CssTemplate\lib\twentytwenty\jquery.event.move.js" />
+    <Content Include="CssTemplate\lib\twentytwenty\jquery.twentytwenty.js" />
+    <Content Include="CssTemplate\lib\twentytwenty\twentytwenty.css" />
+    <Content Include="CssTemplate\lib\waypoints\waypoints.min.js" />
+    <Content Include="CssTemplate\lib\wow\wow.js" />
+    <Content Include="CssTemplate\lib\wow\wow.min.js" />
+    <Content Include="CssTemplate\LICENSE.txt" />
+    <Content Include="CssTemplate\price.html" />
+    <Content Include="CssTemplate\READ-ME.txt" />
+    <Content Include="CssTemplate\service.html" />
+    <Content Include="CssTemplate\team.html" />
+    <Content Include="CssTemplate\testimonial.html" />
+    <Content Include="GiveVote.aspx" />
+    <Content Include="Home.aspx" />
+    <Content Include="MyVote.aspx" />
+    <Content Include="PublishResults.aspx" />
+    <Content Include="reports\frm_candidateslist.aspx" />
+    <Content Include="reports\frm_candidatewisevotes.aspx" />
+    <Content Include="reports\frm_candwiseresults.aspx" />
+    <Content Include="reports\frm_resultlist.aspx" />
+    <Content Include="reports\frm_voterslist.aspx" />
+    <Content Include="reports\frm_voteslist.aspx" />
+    <Content Include="ShowResults.aspx" />
+    <Content Include="VoterDash.aspx" />
+    <Content Include="VoterLogin.aspx" />
+    <Content Include="Voter_Reg.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminDash.aspx.cs">
+      <DependentUpon>AdminDash.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminDash.aspx.designer.cs">
+      <DependentUpon>AdminDash.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLogin.aspx.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminLogin.aspx.designer.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Candidate.aspx.cs">
+      <DependentUpon>Candidate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Candidate.aspx.designer.cs">
+      <DependentUpon>Candidate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="castvote.aspx.cs">
+      <DependentUpon>castvote.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="castvote.aspx.designer.cs">
+      <DependentUpon>castvote.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GiveVote.aspx.cs">
+      <DependentUpon>GiveVote.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GiveVote.aspx.designer.cs">
+      <DependentUpon>GiveVote.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyVote.aspx.cs">
+      <DependentUpon>MyVote.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyVote.aspx.designer.cs">
+      <DependentUpon>MyVote.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PublishResults.aspx.cs">
+      <DependentUpon>PublishResults.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PublishResults.aspx.designer.cs">
+      <DependentUpon>PublishResults.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="reports\frm_candidateslist.aspx.cs">
+      <DependentUpon>frm_candidateslist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="reports\frm_candidateslist.aspx.designer.cs">
+      <DependentUpon>frm_candidateslist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="reports\frm_candidatewisevotes.aspx.cs">
+      <DependentUpon>frm_candidatewisevotes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="reports\frm_candidatewisevotes.aspx.designer.cs">
+      <DependentUpon>frm_candidatewisevotes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="reports\frm_candwiseresults.aspx.cs">
+      <DependentUpon>frm_candwiseresults.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="reports\frm_candwiseresults.aspx.designer.cs">
+      <DependentUpon>frm_candwiseresults.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="reports\frm_resultlist.aspx.cs">
+      <DependentUpon>frm_resultlist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="reports\frm_resultlist.aspx.designer.cs">
+      <DependentUpon>frm_resultlist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="reports\frm_voterslist.aspx.cs">
+      <DependentUpon>frm_voterslist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="reports\frm_voterslist.aspx.designer.cs">
+      <DependentUpon>frm_voterslist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="reports\frm_voteslist.aspx.cs">
+      <DependentUpon>frm_voteslist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="reports\frm_voteslist.aspx.designer.cs">
+      <DependentUpon>frm_voteslist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="reports\rpt_candidates.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_candidates.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reports\rpt_results.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_results.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reports\rpt_voters.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_voters.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reports\rpt_votes.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_votes.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ShowResults.aspx.cs">
+      <DependentUpon>ShowResults.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShowResults.aspx.designer.cs">
+      <DependentUpon>ShowResults.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VoterDash.aspx.cs">
+      <DependentUpon>VoterDash.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VoterDash.aspx.designer.cs">
+      <DependentUpon>VoterDash.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VoterLogin.aspx.cs">
+      <DependentUpon>VoterLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VoterLogin.aspx.designer.cs">
+      <DependentUpon>VoterLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Voter_Reg.aspx.cs">
+      <DependentUpon>Voter_Reg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Voter_Reg.aspx.designer.cs">
+      <DependentUpon>Voter_Reg.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="uploads\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="reports\rpt_candidates.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_candidates.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reports\rpt_results.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_results.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reports\rpt_voters.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_voters.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reports\rpt_votes.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_votes.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CssTemplate\lib\owlcarousel\LICENSE" />
+    <None Include="CssTemplate\lib\waypoints\links.php" />
+    <None Include="CssTemplate\scss\bootstrap.scss" />
+    <None Include="CssTemplate\scss\bootstrap\scss\bootstrap-grid.scss" />
+    <None Include="CssTemplate\scss\bootstrap\scss\bootstrap-reboot.scss" />
+    <None Include="CssTemplate\scss\bootstrap\scss\bootstrap-utilities.scss" />
+    <None Include="CssTemplate\scss\bootstrap\scss\bootstrap.scss" />
+    <None Include="CssTemplate\scss\bootstrap\scss\forms\_floating-labels.scss" />
+    <None Include="CssTemplate\scss\bootstrap\scss\forms\_form-check.scss" />
+    <None Include="CssTemplate\scss\bootstrap\scss\forms\_form-control.scss" />
+    <None Include="CssTemplate\scss\bootstrap\scss\forms\_form-range.scss" />
+    <None Include="CssTemplate\scss\bootstrap\scss\forms\_form-select.scss" />
+    <None Include="CssTemplate\scss\bootstrap\scss\forms\_form-text.scss" />
+    <None Include="CssTemplate\scss\bootstrap\scss\forms\_input-group.scss" />
+    <None Include="CssTemplate\scss\bootstrap\scss\forms\_labels.scss" />
+    <None Include="CssTemplate\scss\bootstrap\scss\forms\_validation.scss" />
+    <None Include="CssTemplate\scss\bootstrap\scss\helpers\_clearfix.scss" />
+    <None Include="CssTemplate\scss\bootstrap\scss\helpers\_colored-links.scss" />
+    <None Include="CssTemplate\scss\bootstrap\scss\helpers\_position.scss" />
+    <None Include="CssTemplate\scss\bootstrap\scss\helpers\_ratio.scss" />
+    <None Include="CssTemplate\scss\bootstrap\scss\helpers\_stretched-link.scss" />
+    <None Include="CssTemplate\scss\bootstrap\scss\helpers\_text-truncation.scss" />
+    <None Include="CssTemplate\scss\bootstrap\scss\helpers\_visually-hidden.scss" />
+    <None Include="CssTemplate\scss\bootstrap\scss\mixins\_alert.scss" />
+    <None Include="CssTemplate\scss\bootstrap\scss\mixins\_border-radius.scss" />
+    <None Include="CssTemplate\scss\bootstrap\scss\mixins\_box-shadow.scss" />
+    <None Include="CssTemplate\scss\bootstrap\scss\mixins\_breakpoints.scss" />
+    <None Include="CssTemplate\scss\bootstrap\scss\mixins\_buttons.scss" />
+    <None Include="CssTemplate\scss\bootstrap\scss\mixins\_caret.scss" />
+    <None Include="CssTemplate\scss\bootstrap\scss\mixins\_clearfix.scss" />
+    <None Include="CssTemplate\scss\bootstrap\scss\mixins\_color-scheme.scss" />
+    <None Include="CssTemplate\scss\bootstrap\scss\mixins\_container.scss" />
+    <None Include="CssTemplate\scss\bootstrap\scss\mixins\_deprecate.scss" />
+    <None Include="CssTemplate\scss\bootstrap\scss\mixins\_forms.scss" />
+    <None Include="CssTemplate\scss\bootstrap\scss\mixins\_gradients.scss" />
+    <None Include="CssTemplate\scss\bootstrap\scss\mixins\_grid.scss" />
+    <None Include="CssTemplate\scss\bootstrap\scss\mixins\_image.scss" />
+    <None Include="CssTemplate\scss\bootstrap\scss\mixins\_list-group.scss" />
+    <None Include="CssTemplate\scss\bootstrap\scss\mixins\_lists.scss" />
+    <None Include="CssTemplate\scss\bootstrap\scss\mixins\_pagination.scss" />
+    <None Include="CssTemplate\scss\bootstrap\scss\mixins\_reset-text.scss" />
+    <None Include="CssTemplate\scss\bootstrap\scss\mixins\_resize.scss" />
+    <None Include="CssTemplate\scss\bootstrap\scss\mixins\_table-variants.scss" />
+    <None Include="CssTemplate\scss\bootstrap\scss\mixins\_text-truncate.scss" />
+    <None Include="CssTemplate\scss\bootstrap\scss\mixins\_transition.scss" />
+    <None Include="CssTemplate\scss\bootstrap\scss\mixins\_utilities.scss" />
+    <None Include="CssTemplate\scss\bootstrap\scss\mixins\_visually-hidden.scss" />
+    <None Include="CssTemplate\scss\bootstrap\scss\utilities\_api.scss" />
+    <None Include="CssTemplate\scss\bootstrap\scss\vendor\_rfs.scss" />
+    <None Include="CssTemplate\scss\bootstrap\scss\_accordion.scss" />
+    <None Include="CssTemplate\scss\bootstrap\scss\_alert.scss" />
+    <None Include="CssTemplate\scss\bootstrap\scss\_badge.scss" />
+    <None Include="CssTemplate\scss\bootstrap\scss\_breadcrumb.scss" />
+    <None Include="CssTemplate\scss\bootstrap\scss\_button-group.scss" />
+    <None Include="CssTemplate\scss\bootstrap\scss\_buttons.scss" />
+    <None Include="CssTemplate\scss\bootstrap\scss\_card.scss" />
+    <None Include="CssTemplate\scss\bootstrap\scss\_carousel.scss" />
+    <None Include="CssTemplate\scss\bootstrap\scss\_close.scss" />
+    <None Include="CssTemplate\scss\bootstrap\scss\_containers.scss" />
+    <None Include="CssTemplate\scss\bootstrap\scss\_dropdown.scss" />
+    <None Include="CssTemplate\scss\bootstrap\scss\_forms.scss" />
+    <None Include="CssTemplate\scss\bootstrap\scss\_functions.scss" />
+    <None Include="CssTemplate\scss\bootstrap\scss\_grid.scss" />
+    <None Include="CssTemplate\scss\bootstrap\scss\_helpers.scss" />
+    <None Include="CssTemplate\scss\bootstrap\scss\_images.scss" />
+    <None Include="CssTemplate\scss\bootstrap\scss\_list-group.scss" />
+    <None Include="CssTemplate\scss\bootstrap\scss\_mixins.scss" />
+    <None Include="CssTemplate\scss\bootstrap\scss\_modal.scss" />
+    <None Include="CssTemplate\scss\bootstrap\scss\_nav.scss" />
+    <None Include="CssTemplate\scss\bootstrap\scss\_navbar.scss" />
+    <None Include="CssTemplate\scss\bootstrap\scss\_offcanvas.scss" />
+    <None Include="CssTemplate\scss\bootstrap\scss\_pagination.scss" />
+    <None Include="CssTemplate\scss\bootstrap\scss\_popover.scss" />
+    <None Include="CssTemplate\scss\bootstrap\scss\_progress.scss" />
+    <None Include="CssTemplate\scss\bootstrap\scss\_reboot.scss" />
+    <None Include="CssTemplate\scss\bootstrap\scss\_root.scss" />
+    <None Include="CssTemplate\scss\bootstrap\scss\_spinners.scss" />
+    <None Include="CssTemplate\scss\bootstrap\scss\_tables.scss" />
+    <None Include="CssTemplate\scss\bootstrap\scss\_toasts.scss" />
+    <None Include="CssTemplate\scss\bootstrap\scss\_tooltip.scss" />
+    <None Include="CssTemplate\scss\bootstrap\scss\_transitions.scss" />
+    <None Include="CssTemplate\scss\bootstrap\scss\_type.scss" />
+    <None Include="CssTemplate\scss\bootstrap\scss\_utilities.scss" />
+    <None Include="CssTemplate\scss\bootstrap\scss\_variables.scss" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50679</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
